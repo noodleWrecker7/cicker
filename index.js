@@ -51,6 +51,19 @@ window.onload = function(){
   }, 1000/fps)
 }
 
+/*increaseClickPurchase(){
+  if (cookies >= this.cost) {
+    this.owned ++;
+    cookies -= this.cost;
+    this.cost += Math.round(this.cost * 0.15);
+    cookiesPS += this.efficiency;
+    } else {
+      alert("You cannot afford this yet");
+    }
+    updateHTMLDisplays();
+}
+*/
+
 function cookieClick(){
   cookies += clickIncrease;
   console.log(cookies);
@@ -61,6 +74,7 @@ function cookieClick(){
 function updateHTMLDisplays(){
   document.getElementById("cookieTotal").innerHTML = Math.floor(cookies) + ' cookies';
   document.getElementById("cookiePS").innerHTML = "CPS: " + Math.round(cookiesPS*10)/10;
+  document.getElementById("title").innerHTML = Math.floor(cookies) + ' cookies';
   upgrade1.update();
   upgrade2.update();
 }

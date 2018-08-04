@@ -1,4 +1,9 @@
 <html>
+  <head>
+    <title id="title">
+      Cookie Clicker
+    </title>
+  </head>
   <script src="index.js"></script>
   <link rel="stylesheet" type="text/css" href="index.css"><link>
   <button class="cButton" onClick="cookieClick();" id="cookieButton">
@@ -6,8 +11,9 @@
     <div class="cps" id="cookiePS">CPS: 0</div>
   </button>
   <!--<canvas class="upgrades" id="gameCanvas" width="600" height="2000"></canvas>-->
+<div class="boxes">
   <div class="clickers">
-
+    Clickers
     <button class="upgrade one" onclick="upgrade1.purchase();">
       Upgrade 1
       <div class="info">
@@ -29,9 +35,11 @@
   </div>
 
   <div class="upgrades">
-    <div class="upgrade"
+    Upgrades
+    <button class="increaseClick" onclick="increaseClickPurchase();">
+    </div>
   </div>
-
+</div>
 
 
   </html>
