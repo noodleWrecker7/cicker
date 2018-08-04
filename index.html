@@ -1,5 +1,37 @@
 <html>
-  <canvas id="gameCanvas" width="1200" height="900"></canvas>
   <script src="index.js"></script>
-  <style src="index.css"></style>
-</html>
+  <link rel="stylesheet" type="text/css" href="index.css"><link>
+  <button class="cButton" onClick="cookieClick();" id="cookieButton">
+    <div class="total" id="cookieTotal">0 cookies</div>
+    <div class="cps" id="cookiePS">CPS: 0</div>
+  </button>
+  <!--<canvas class="upgrades" id="gameCanvas" width="600" height="2000"></canvas>-->
+  <div class="clickers">
+
+    <button class="upgrade one" onclick="upgrade1.purchase();">
+      Upgrade 1
+      <div class="info">
+        <div class="item price" id="upgrade1Price">15 cookies</div>
+        <div class="item amtOwned" id="upgrade1AmtOwned">Owned: 0</div>
+        <div class="item efficiency" id="upgrade1Efficiency">CPS: 0.1</div>
+      </div>
+    </button>
+
+    <button class="upgrade two" onclick="upgrade2.purchase();">
+      Upgrade 2
+      <div class="info">
+        <div class="item price" id="upgrade2Price">100 cookies</div>
+        <div class="item amtOwned" id="upgrade2AmtOwned">Owned: 0</div>
+        <div class="item efficiency" id="upgrade2Efficiency">CPS: 1</div>
+      </div>
+    </button>
+
+  </div>
+
+  <div class="upgrades">
+    <div class="upgrade"
+  </div>
+
+
+
+  </html>
